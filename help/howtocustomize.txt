@@ -1,0 +1,16 @@
+JPQuiz is highly customizable when it comes to which words you want to play with. All of the data for a word that appears in a gamemode exist inside of the 'japanese_words' folder of this game.
+
+To add or delete words, open and edit the .txt file with the part of speech category you want to change. The words, when loaded into the game, are organized into a Python tuple that looks like this: (kanji, pronunciation, English).
+
+Because of this structure, it is really easy to add a new word into the game. For example, if I wanted to add "新しい", the Japanese word for "new", I would format the word separated by English commas in the appropriate .txt file. Because "新しい" is an adjective, I will add it to 'adjectives.txt'. On a new line in 'adjectives.txt', I write the three criteria: 
+
+新しい, あたらしい, new
+
+"新しい" is the kanji, "あたらしい" is the kana pronunciation, and "new" is the English meaning.
+
+It is very easy to modify! When the words are added or deleted, they will automatically be added or deleted from the save file, and stats like "Correct Guesses", "Viewed Total", and others are created or destroyed for the changed words. 
+
+Caution: Be careful when modifying data your .txt files. If a word tries to load and does not have all 3 criteria, the game WILL crash, potentially losing data. Make sure that your words have 3 items (kanji, pronunciation, English) before opening the game after modifying.
+If a word doesn't have a kanji, a simple fix would just be to put the 'kanji' criteria as the pronunciation as well. Ex: (と, と, with)
+
+Lastly, make sure that the modified files DO NOT contain blank lines within them. This can cause issues when loading words.
