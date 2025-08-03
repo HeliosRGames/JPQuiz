@@ -1,11 +1,20 @@
 # JPQuiz
-A Japanese Language quiz game made in python with tkinter. A passion project I made for fun.
+A Japanese Language quiz game made in python with tkinter. A passion project I made for fun, and is an unfinished work in progress. How to customize is described in the game's help menu, or in the text files located in the help directory.
 
-# Requirements
+# Python Module Requirements
+tkinter,
+os,
+random,
+pygame,
+sqlite3,
+gc,
+colorama,
+threading,
 
 # Setup
-To set up the game, you must navigate into the JPQuiz directory and run jpquizapp.py
-The game files will load, and a tkinter window will open, starting the game.
+To set up the game, you must clone this repository, navigate into the JPQuiz directory, and run jpquizapp.py.
+The game files will load, and a tkinter window named "JPQuiz" will open, starting the game.
+A "save.db" file will be created upon startup that stores all of the game's save data. This file can be deleted to reset progress.
 
 
 # Licensing
