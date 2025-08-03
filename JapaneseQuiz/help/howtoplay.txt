@@ -1,0 +1,24 @@
+JPQuiz is a Japanese language learning game developed by Cooper Rogers. April 2025.
+
+In order to play the game, you simply click "Play!" on the main menu and select a gamemode.
+
+The basic gameplay loop of JPQuiz:
+A random word will be chosen, and you must enter the correct English meaning (case-sensitive) to get the answer right. Points are added for each correct word, and subtracted for each incorrect word. 
+
+Points:
+100 points are added for each right answer, and each correct answer adds +0.1 multiplier to your point gain for each question. Answering a question incorrectly will reset the multiplier counter back to 1. A variable amount of points proportional to your total score is subtracted for each incorrect answer.
+
+Scores and Stats:
+In JPQuiz, a player's highscores and stats are tracked inside of a save file named "save.db". Each time a new highscore is reached in a gamemode (recognizable by a burst of confetti), the score is then recorded into the save file along with other stats like "Buttons Pressed", "Favorite Gamemode", etc. Try to reach a new highscore each time you play!
+
+Gamemodes:
+There are 9 different games you can choose!
+-Standard Quiz: This gamemode tests you against all of the words inside of the word files.
+
+-Timed: This gamemode is the same as Standard Quiz, but it has a time limit set at the beginning of the round. When the timer reaches 0, the round ends and a grade is assigned.
+
+-Part of speech Only: As the name implies, the 5 gamemodes that end in "Only" only have the part of speech in the name. (Nouns are nouns, verbs are verbs, etc) Miscellaneous words are just used to describe parts of speech that don't exist in Japanese in the same way as in English, like particles, prepositions, onomatopei, copulas, and more.
+
+-No Pronounciation: This gamemode tests the player with the Japanese word in it's kanji form, but it does not provide the accompanied kana for the pronunciation. This gamemode is designed to test kanji knowledge.
+
+-Review Mode: Review Mode is a gamemode that can only be played after the player incorrectly guesses at least one word. Each incorrectly guessed word is then added to a list of words that need to be reviewed. By guessing the word correctly 3 times in Review Mode, it will be cleared from the review list. When all words in the review list are cleared, Review Mode will only become playable when more words are guessed incorrectly. If you don't know the answer to word, or if you'd just prefer to skip it, there is a skip button which will change the question to another word without clearing it from the review list. This gamemode exists to strengthen knowledge in unknown words.
